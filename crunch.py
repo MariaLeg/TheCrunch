@@ -9,6 +9,7 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = 'https://www.onceuponachef.com/recipes/couscous.html'
+#url = 'https://www.onceuponachef.com/recipes/cornbread-muffins.html'
 #url = 'https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach/'
 req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 html = urllib.request.urlopen(req, context=ctx).read()
